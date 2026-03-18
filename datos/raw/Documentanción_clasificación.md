@@ -3,6 +3,8 @@
 ## Nombre de la base de datos
 El conjunto de datos original lleva como nombre "WA_Fn-UseC_-HR-Employee-Attrition.csv"
 
+![Imagen oficinas de IMB](Fotos/clasificacion1.jpg)
+
 
 ## Fuente (URL)
 https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
@@ -16,6 +18,9 @@ Nuestro objetivo es identificar posibles relaciones entre una serie de datos de 
 
 ## Variable objetivo 
 Attrition (Rotación de personal en la empresa)
+
+![Imagen oficinas de IMB](Fotos/clasificacion2.jpg)
+
 
 ## Diccionario de variables
 
