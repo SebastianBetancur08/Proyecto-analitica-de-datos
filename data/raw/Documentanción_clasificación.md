@@ -3,7 +3,7 @@
 ## Nombre de la base de datos
 El conjunto de datos original lleva como nombre "WA_Fn-UseC_-HR-Employee-Attrition.csv"
 
-![Imagen oficinas de IMB](Fotos/clasificacion1.jpg)
+![Imagen oficinas de IMB](Fotos/clasificacion2.jpeg)
 
 
 ## Fuente (URL)
@@ -19,7 +19,7 @@ Nuestro objetivo es identificar posibles relaciones entre una serie de datos de 
 ## Variable objetivo 
 Attrition (Rotación de personal en la empresa)
 
-![Imagen oficinas de IMB](Fotos/clasificacion2.jpg)
+![Imagen oficinas de IMB](Fotos/clasificacion1.jpeg)
 
 
 ## Diccionario de variables
