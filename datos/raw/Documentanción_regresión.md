@@ -3,6 +3,8 @@
 ## Nombre de la base de datos.
 La base de datos original lleva por nombre "IUBAT_students_performace_Dataset"
 
+![Imagen oficinas de IMB](Fotos/regresion1.jpg)
+
 ## Fuente (URl)
 https://data.mendeley.com/datasets/ns87rtkv58/2
 
@@ -15,8 +17,7 @@ Determinar si existe una correlación entre estas variables y el rendimiento aca
 ## Variable objetivo
 CGPA, promedio acomulado del estudiante, una variable numérica continua.
 
-## Variable objetivo 
-CGPA, promedio acumulado del estudiante, una variable numérica continua.
+![Imagen oficinas de IMB](Fotos/regresion2.jpg)
 
 ## Diccionario de variables
 
