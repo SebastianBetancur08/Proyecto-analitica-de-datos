@@ -1,3 +1,5 @@
+# Este script se encarga de importar los datos desde los archivos CSV y guardarlos en una base de datos SQLite.
+
 import pandas as pd
 import sqlite3
 from pathlib import Path
