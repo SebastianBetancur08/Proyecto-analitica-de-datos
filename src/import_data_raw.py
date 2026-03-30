@@ -1,0 +1,22 @@
+import pandas as pd
+import sqlite3
+from pathlib import Path
+
+#Crear carpeta database si no existe
+Path('database').mkdir(parents=True, exist_ok=True)
+
+#leer csv
+df1= pd.read_csv('data/raw/dataset_Regresión.csv')
+df2= pd.read_csv('data/raw/dataset_Clasificación.csv')
+
+# Crear la base de datos dentro de la carpeta database
+conn1= sqlite3.connect('database/regresion.db')
+conn2= sqlite3.connect('database/clasificacion.db')
+
+# Pasar csv a tabla SQL
+df1.to_sql('regresion', conn1, if_exists='replace', index=False)
+df2.to_sql('clasificacion', conn2, if_exists='replace', index=False)
+
+# Cerrar la conexión
+conn1.close()
+conn2.close()
