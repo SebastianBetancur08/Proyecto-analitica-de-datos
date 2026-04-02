@@ -32,26 +32,26 @@ query2= """select
             from regresion;
         """
 query3= """ select 
-                "What is your current CGPA?" as Promedio_CGPA,
+                avg("What is your current CGPA?") as Promedio_CGPA,
                 "What is your monthly Family Income " as Ingreso_familiar
             from regresion
-            group by Promedio_CGPA
+            group by Ingreso_familiar
             order by Promedio_CGPA desc; 
         """
 query4= """ select
-                "What is your current CGPA?" as Promedio_CGPA,
+                avg("What is your current CGPA?") as Promedio_CGPA,
                 "How many hour do you spent daily in social media? (Hours)" as Horas_redes_sociales
             from regresion
             where "Average attendance on class (Percentage )" >= 70 and "What is your preferable learning mode?" = 'Offline'
-            group by Promedio_CGPA
+            group by Horas_redes_sociales
             order by Promedio_CGPA desc;
         """
 query5= """ select
-                "What is your current CGPA?" as Promedio_CGPA,
+                avg("What is your current CGPA?") as Promedio_CGPA,
                 "How many hour do you spent daily in social media? (Hours)" as Horas_redes_sociales
             from regresion
             where "Average attendance on class (Percentage )" < 70 and "What is your preferable learning mode?" = 'Offline'
-            group by Promedio_CGPA
+            group by Horas_redes_sociales
             order by Promedio_CGPA desc;
         """
 
