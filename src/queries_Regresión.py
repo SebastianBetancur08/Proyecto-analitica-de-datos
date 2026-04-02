@@ -1,11 +1,15 @@
 # Este script se encarga de ejecutar las consultas SQL para el proyecto de Regresión y guardar los resultados en archivos CSV.
 
-
 import pandas as pd
 import sqlite3
+from pathlib import Path
+
+# Crear carpeta data/processed/Regresión si no existe
+Path('data/processed/Regresión').mkdir(parents=True, exist_ok=True)
 
 #Conectar a la base de datos
 conn= sqlite3.connect('database/regresion.db')
+
 
 #Consultas SQL
 query1= """select 
