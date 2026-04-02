@@ -7,7 +7,7 @@ from pathlib import Path
 #Crear carpeta database si no existe
 Path('database').mkdir(parents=True, exist_ok=True)
 
-#leer csv
+# Leer csv
 df1= pd.read_csv('data/raw/dataset_Regresión.csv')
 df2= pd.read_csv('data/raw/dataset_Clasificación.csv')
 
@@ -22,3 +22,5 @@ df2.to_sql('clasificacion', conn2, if_exists='replace', index=False)
 # Cerrar la conexión
 conn1.close()
 conn2.close()
+
+print("Datos importados correctamente a la base de datos.")
