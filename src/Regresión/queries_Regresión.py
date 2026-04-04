@@ -4,12 +4,22 @@ import pandas as pd
 import sqlite3
 from pathlib import Path
 
-# Crear carpeta data/processed/Regresión si no existe (relativa al directorio padre del script)
-ruta_base = Path(__file__).parent.parent / 'data' / 'processed' / 'Regresión'
+# Función para encontrar la ruta del archivo CSV de salida
+def obtener_ruta_csv(root=Path.cwd()):
+    ruta_meta='data/processed/Regresión'
+    if (root / ruta_meta).exists():
+        return root / ruta_meta
+    else:
+        root=root.parent
+        return obtener_ruta_csv(root)
+    
+
+# Crear carpeta data/processed/Regresión si no existe
+ruta_base = obtener_ruta_csv()
 ruta_base.mkdir(parents=True, exist_ok=True)
 
 #Conectar a la base de datos
-conn= sqlite3.connect(Path(__file__).parent.parent / 'database' / 'regresion.db')
+conn= sqlite3.connect('database/regresion.db')
 
 
 #Consultas SQL
