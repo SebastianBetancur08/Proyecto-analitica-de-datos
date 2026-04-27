@@ -1,4 +1,4 @@
-.venv/
+venv/
 database/
 data/processed/
 .vscode/
